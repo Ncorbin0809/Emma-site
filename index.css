@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #111;
+  color: white;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  position: relative;
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 60px; /* Adjust this to match your header height */
+  right: 2rem;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  display: none;
+  flex-direction: column;
+  z-index: 9999;
+  min-width: 180px;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  display: block;
+}
+
+.home-heading {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 1 rem;
+}
+
+.home-paragraph {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Contact Page */
+
+.contact-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.contact-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #333;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #555;
+}
+
+.social-icon {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #aaa;
+}
+
+.contact-title {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 1 rem;
+}
+
+.contact-paragraph {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* About me Page */
+
+.about-me-title {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 1 rem;
+}
+
+.about-me-paragraph {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.emma-img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
