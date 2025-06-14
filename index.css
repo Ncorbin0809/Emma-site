@@ -188,3 +188,63 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*--Services page */
+
+.services-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  color: black;
+  padding: 0;
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.services-list li {
+  background-color: rgba(235, 226, 226, 0.377);
+  padding: 1rem;
+  border-radius: 10px;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn {
+  display: block;
+  width: max-content;
+  margin: 0.5rem auto 0;
+  padding: 0.8rem 1.5rem;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #555;
+}
+
+.services-p1 {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.services-p2 {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
