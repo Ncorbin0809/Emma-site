@@ -19,6 +19,12 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
 .homepage-image {
   width: 650px;
   height: auto;
