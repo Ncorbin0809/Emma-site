@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
   font-family: "Edu NSW ACT Hand Pre", cursive;
-  background-image: url(images/background.jpg);
+  background-image: url(images/old-wooden-floor-textured-background.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -14,16 +20,27 @@ body {
 }
 
 .homepage-image {
-  width: 250px;
+  width: 650px;
   height: auto;
-  border-radius: 50%;
-  margin: 1rem auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 2rem auto 1rem;
   display: block;
-  object-fit: cover;
+ 
+}
+
+.home-paragraph {
+   background: rgba(39, 31, 21, 0.75); /* warm cream overlay */
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  text-align: center;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .site-header {
   position: sticky;
@@ -94,25 +111,34 @@ body {
   display: block;
 }
 
-.home-heading {
-  text-align: center;
-  color: black;
-  font-size: 3rem;
-  margin-bottom: 1 rem;
-}
-
-.home-paragraph {
-  text-align: center;
-  color: black;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}
-
 /* Contact Page */
 
 .contact-section {
   text-align: center;
   padding: 3rem 1rem;
+}
+
+ .contact-title {
+  text-align: center;
+  color: white;
+  text-shadow: 5px 2px 1px rgba(0,0,0,0.6); 
+  font-size: 3rem;
+  margin-bottom: 1 rem;
+}
+
+.contact-paragraph {
+  text-align: center;
+  color: white;
+  background: rgba(39, 31, 21, 0.75);
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 .contact-column {
@@ -148,32 +174,27 @@ body {
   color: #aaa;
 }
 
-.contact-title {
-  text-align: center;
-  color: black;
-  font-size: 3rem;
-  margin-bottom: 1 rem;
-}
-
-.contact-paragraph {
-  text-align: center;
-  color: black;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}
-
 /* About me Page */
 
 .about-me-title {
   text-align: center;
-  color: black;
+  color: white;
+  text-shadow: 5px 2px 1px rgba(0,0,0,0.6);
   font-size: 3rem;
   margin-bottom: 1 rem;
 }
 
 .about-me-paragraph {
   text-align: center;
-  color: black;
+  color: white;
+  background: rgba(39, 31, 21, 0.75);
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;;
+  max-width: 800px;
+  margin: 0 auto;
   font-size: 1.5rem;
   margin-top: 3rem;
 }
@@ -191,10 +212,13 @@ body {
 
 /*--Services page */
 
-.services-title {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: black;
+.services-image {
+  width: 400px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .services-list {
@@ -209,21 +233,26 @@ body {
 }
 
 .services-list li {
-  background-color: rgba(235, 226, 226, 0.377);
+  background: rgba(39, 31, 21, 0.75);
+  font-family: 'Georgia', serif ;
   padding: 1rem;
+  text-align: center;
   border-radius: 10px;
   line-height: 1.6;
+  color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .contact-btn {
   display: block;
   width: max-content;
-  margin: 0.5rem auto 0;
+  margin: 2rem auto 0;
   padding: 0.8rem 1.5rem;
-  background-color: #333;
+  background:rgba(39, 31, 21, 0.75);
   color: white;
   border-radius: 8px;
+  font-family: 'gEorgia', serif ;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
@@ -231,22 +260,6 @@ body {
 
 .contact-btn:hover {
   background-color: #555;
-}
-
-.services-p1 {
-  text-align: center;
-  color: black;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.services-p2 {
-  text-align: center;
-  color: black;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 /*--Portfolio page--*/
