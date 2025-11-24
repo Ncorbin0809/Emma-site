@@ -177,6 +177,11 @@ body {
   transition: color 0.3s ease;
 }
 
+.social-img {
+  width: 160px;
+  height: auto;
+}
+
 .social-icon:hover {
   color: #aaa;
 }
