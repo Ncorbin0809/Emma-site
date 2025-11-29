@@ -278,6 +278,17 @@ body {
 
 /* General Page Styling */
 
+.heavy-bg {
+  background-attachment: scroll !important; /* avoids the blurry downscale */
+}
+
+.heavy-bg .site-header {
+  /* fallback instead of blur, only when heavy */
+  backdrop-filter: none !important;
+  background: rgba(0,0,0,0.75) !important;
+}
+
+.heavy-bg .masonry-item:hover { transform: none !important; }
 
 main {
   padding: 2rem;
