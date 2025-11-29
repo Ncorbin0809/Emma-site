@@ -5,7 +5,10 @@
 }
 
 /* Prevent accidental sideways scroll from oversized content */
-html, body { overflow-x: hidden; }
+html, body { 
+  overflow-x: hidden; 
+  height: 100%;            /* ensure the fixed layer paints properly */
+}
 
 img {
   max-width: 100%;
@@ -13,20 +16,27 @@ img {
   display: block;
 }
 
+/* --- Background moved to a fixed pseudo-layer (no blur/mush with many images) --- */
 body {
   font-family: "Edu NSW ACT Hand Pre", cursive;
-  background-image: url(images/old-wooden-floor-textured-background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   color: white;
+  background: none; /* was: url(...) + fixed */
 }
 
-@media (max-width: 400px) {
-  body {
-    background-attachment: scroll;
-  }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* behind everything */
+  background: url(images/old-wooden-floor-textured-background.jpg) center / cover no-repeat;
+  will-change: transform; /* keeps it crisp on scroll/compositing */
 }
+
+/* (old attachment toggle no longer needed)
+@media (max-width: 400px) {
+  body { background-attachment: scroll; }
+}
+*/
 
 .homepage-image {
   width: 650px;
@@ -279,11 +289,11 @@ body {
 /* General Page Styling */
 
 .heavy-bg {
-  background-attachment: scroll !important; /* avoids the blurry downscale */
+  /* no effect now, but harmless to keep */
+  background-attachment: scroll !important;
 }
 
 .heavy-bg .site-header {
-  /* fallback instead of blur, only when heavy */
   backdrop-filter: none !important;
   background: rgba(0,0,0,0.75) !important;
 }
